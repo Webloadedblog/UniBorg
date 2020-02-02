@@ -8,8 +8,8 @@ from uniborg.util import admin_cmd
 @borg.on(admin_cmd(pattern="enaclk ?(.*)", outgoing=True))
 async def enaclk(event):
     await event.edit("K...")
-@borg.on(events.NewMessage(pattern="http",incoming=True, func=lambda e: e.is_private))
-       def clkstart(m):
+@borg.on(events.NewMessage(pattern="http",(incoming=True, func=lambda e: e.is_private))
+     async def clkstart(m):
         person = await m.get_sender()
         user=person.first_name
         rantext = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(7))
@@ -22,3 +22,4 @@ async def enaclk(event):
       
         sent = await m.reply(smsg)
     await event.edit("Done...")
+pip install -U --user setuptools
