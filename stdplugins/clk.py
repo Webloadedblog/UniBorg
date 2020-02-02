@@ -3,7 +3,7 @@ import random
 import string
 import requests
 from random import randint 
-from uniborg.util import admin_cmd, client
+from uniborg.util import admin_cmd
   
 @borg.on(pattern=r"^.enaclk", outgoing=True)
 async def enaclk(event):
