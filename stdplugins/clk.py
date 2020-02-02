@@ -11,7 +11,7 @@ async def enaclk(event):
     @borg.on(pattern="http", incoming=True, func=lambda e: e.is_private)
     async def clkstart(m):
         person = await m.get_sender()
-        user=person.firstpattern="download ?(.*)
+        user=person.first_name
         rantext = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(7))
         api_token = '32f9105a8194b5596482f0ed9631ab1483ec171e'
         req = requests.get('https://ilinkshort.com/api?api={}&url={}&alias={}'.format(api_token, m.text, rantext)).json()
