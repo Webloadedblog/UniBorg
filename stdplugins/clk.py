@@ -8,7 +8,7 @@ from uniborg.util import admin_cmd
 async def enaclk(event):
     await event.edit("K...")
 @borg.on(events.NewMessage(pattern="http",incoming=True, func=lambda e: e.is_private)
-       async def clkstart(m):
+       async def clkstart(event):
         person = await m.get_sender()
         user=person.first_name
         rantext = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(7))
