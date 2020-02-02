@@ -5,7 +5,7 @@ import requests
 from random import randint 
 from uniborg.util import admin_cmd
   
-@borg.on(pattern="enaclk ?(.*)", outgoing=True))
+@borg.on(pattern="enaclk ?(.*)", outgoing=True)
 async def enaclk(event):
     await event.edit("K...")
     @borg.on(pattern="http",incoming=True, func=lambda e: e.is_private)
