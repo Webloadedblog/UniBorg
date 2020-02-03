@@ -4,7 +4,7 @@ import asyncio
 TANNER = 79316791
 TCOIN = -1001394158904
 
-@borg.on(incoming=True)
+@borg.on(events.NewMessage,incoming=True)
 async def handler(event):
     me = await event.client.get_me()
     if event.message.from_id != TANNER:
