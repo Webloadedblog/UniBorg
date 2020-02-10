@@ -1,5 +1,3 @@
-All thanks to snapdragon & loxxi
-
 from telethon import events
 
 @borg.on(events.NewMessage(pattern="", incoming=True))
