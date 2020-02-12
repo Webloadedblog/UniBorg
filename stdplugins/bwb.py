@@ -1,6 +1,7 @@
 from uniborg.util import admin_cmd
 from bwb import bwb
 import asyncio
+Import client
 
 bwb = bwb.bwb(client.uid)
 wrap_users = {
