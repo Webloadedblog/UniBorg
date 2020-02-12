@@ -1,5 +1,4 @@
 from uniborg.util import admin_cmd
-from uniborg import client
 from bwb import bwb
 import asyncio
 
