@@ -38,3 +38,5 @@ lxml
 pytz
 anime-downloader
 patool
+bwb
+
